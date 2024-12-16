@@ -20,7 +20,7 @@ public class SeleniumTest {
 
         driver = new ChromeDriver(options);
 
-        driver.get("https://www.selenium.dev/");
+        driver.get("https://www.selenium./");
         driver.manage().window().maximize();
 
         ((JavascriptExecutor)driver).executeScript("window.open('https://www.instagram.com/'),'_blank'");
