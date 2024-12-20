@@ -1,0 +1,41 @@
+html is a document used by front end developer for presenting application in multimedia form
+
+<html> hypertext markup language
+this document contains actual code of webpage in different structure for application presentation on browser or platform
+</html>
+
+<head>
+head contains metadata such as titles of application, resourses, images , logos
+</head>
+
+<body>
+body contains actual web elements used in application
+</body>
+
+
+<html>
+    <head>    </head>
+    <body>    </body>
+</html>
+
+
+<body> starting point
+
+</body> ending point
+
+<link
+<div
+<span
+word after angle bracket < in called as tagname
+
+<tagname id=username class=user placeholder= textbox
+word coming after tagname and having value define by = sign is called as attribute
+attributes can be multiple after tagname
+
+html node
+
+<body>
+<tagname attribute=value >text</tagename>
+</body>
+>text<
+anything writen between two angle bracket is called as text

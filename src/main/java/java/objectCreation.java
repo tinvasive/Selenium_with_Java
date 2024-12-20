@@ -1,10 +1,10 @@
-package org.example;
+package java;
 
 public class objectCreation {
     public static void main(String[] args) {
 
         /* object creation using new keyword
-        obj1 is reference object for clas objectCreation
+        obj1 is reference object for clas java.objectCreation
         using obj1 calling method having properties/logic of code
          */
 

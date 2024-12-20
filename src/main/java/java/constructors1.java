@@ -1,4 +1,4 @@
-package org.example;
+package java;
 
 public class constructors1 {
     int x;
