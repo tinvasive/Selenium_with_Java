@@ -1,4 +1,4 @@
-package org.example;
+package selenium;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,21 +9,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.Iterator;
 import java.util.Set;
 
-
-public class SeleniumTest {
+public class multipleTabs {
 
     static WebDriver driver;
 
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
-        ChromeOptions options=new ChromeOptions();
-
+        ChromeOptions options = new ChromeOptions();
         driver = new ChromeDriver(options);
-
         driver.get("https://www.selenium.dev/");
         driver.manage().window().maximize();
 
-        ((JavascriptExecutor)driver).executeScript("window.open('https://www.instagram.com/'),'_blank'");
+        ((JavascriptExecutor) driver).executeScript("window.open('https://www.instagram.com/'),'_blank'");
         Set<String> windowHandels = driver.getWindowHandles();
         Iterator<String> iterator = windowHandels.iterator();
         String firsttab = iterator.next();
@@ -31,6 +28,6 @@ public class SeleniumTest {
         driver.switchTo().window(secandtab);
         Thread.sleep(5000);
         driver.switchTo().window(firsttab);
-
+        driver.quit();
     }
 }
